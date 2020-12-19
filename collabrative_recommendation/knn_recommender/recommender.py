@@ -1,6 +1,10 @@
 from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import fuzz
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.sparse import csr_matrix
 
 class Recommender:
     def __init__(self,metric,algorithm,k,data,decode_id_song):
@@ -56,5 +60,4 @@ class Recommender:
             print(f"The recommendation system could not find a match for {song}")
             return
         return match_tuple[0][1]
-    
-#model = Recommender(metric='cosine', algorithm='brute', k=20, data=mat_songs_features, decode_id_song=decode_id_song)
+        
