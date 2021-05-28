@@ -156,7 +156,7 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Skg@123!@localhost/flask_learning'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask_learning'
 db = SQLAlchemy(app)
 
 
