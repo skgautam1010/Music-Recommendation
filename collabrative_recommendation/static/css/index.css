@@ -1,0 +1,59 @@
+.body {
+    background: #0f1228;
+    overflow-x: hidden;
+    color: #e7e9f0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#wrapper {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    width: 995px;
+}
+
+#output_image {
+    max-width: 500px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.head-image {
+    width: 250px;
+}
+
+.button-text:hover {
+    background-color: dodgerblue;
+}
+
+.caption-text {
+    font-family: 'Hachi Maru Pop', cursive;
+    margin: 25px 0 15px 0;
+}
+
+
+.search-input {
+    padding: 8px 15px;
+    font-size: 15px;
+    width: 250px;
+    border-width: 0;
+    background: #a592f2;
+    color: darkslateblue;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
+
+}
+
+.search-input::placeholder {
+    color: darkslateblue;
+}
+
+.search-input:focus {
+    outline: none;
+}
