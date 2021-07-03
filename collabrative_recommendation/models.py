@@ -5,7 +5,7 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #import seaborn as sns
 from scipy.sparse import csr_matrix
-from PIL import Image, ImageTk
+from PIL import Image
 from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import fuzz
 from scipy.sparse import csr_matrix
