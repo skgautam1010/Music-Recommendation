@@ -31,8 +31,17 @@
         <div class="row row-content">
             <div class="col-12 col-sm-4 col-md-6">
                 <h2>About Project</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                <p>A model that recommends music to users on the basis of the song given as input.
+                    I have used the Million Song Dataset, a freely-available collection of audio features and metadata for a million contemporary popular music tracks.
+There are two files that will be used. The first of them will give the information about the songs. Particularly, it contains the user ID, song ID and the listen count. On the other hand, the second file will contain song ID, title of that song, release, artist name and year. 
+We need to merge these two DataFrames. For that aim, we'll use the song_ID. The project uses item-item based Collaborative Filtering Approach to recommend music.</p>
+                <p>A sparse matrix is created for the user x songs. the sparse meatrix is given as the input to the model.KNN model is used.As it is often assumed that the 
+                    things that are similar will always be nearer. so K nearest neighbour helps in finding the music that are very similiar.For measuring the distance 
+                    of two songs i have used the cosine similarity measure .
+                    Fuzzy wuzzy technique has been used which help in matching the strings,that helps in finding the similar strings.
+                    The recommendation is provided after finding all the similar items.
+                    Exposure in this project are Sklearn,Numpy,Pandas ,Jupyter-Notebook,Flask,Python3
+                </p>
             </div>
             <div class="col-sm">
                 <div class="card">
@@ -40,13 +49,13 @@
                     <div class="card-body">
                         <dl class="row">
                             <dt class="col-6">Started</dt>
-                            <dd class="col-6">3 Feb. 2013</dd>
-                            <dt class="col-6">Major Stake Holder</dt>
-                            <dd class="col-6">HK Fine Foods Inc.</dd>
-                            <dt class="col-6">Last Year's Turnover</dt>
-                            <dd class="col-6">$1,250,375</dd>
-                            <dt class="col-6">Employees</dt>
-                            <dd class="col-6">40</dd>
+                            <dd class="col-6">15 Oct. 2020</dd>
+                            <dt class="col-6">Algorithm Used</dt>
+                            <dd class="col-6">K-Nearest Neighbour(KNN)</dd>
+                            <dt class="col-6">Recommendation Type</dt>
+                            <dd class="col-6">Item-Item Based Collaborative Filtering</dd>
+                            <dt class="col-6">Total recommendations</dt>
+                            <dd class="col-6">10</dd>
                         </dl>
                     </div>
                 </div>

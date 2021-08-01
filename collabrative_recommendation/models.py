@@ -203,9 +203,12 @@ def display():
         model = Recommender(metric='cosine', algorithm='brute', k=20,
                             data=mat_songs_features, decode_id_song=decode_id_song)
         new_recommendations = model.make_recommendation(
-            new_song=song, n_recommendations=10)
-
-    return render_template('index.html', new_recommendations=new_recommendations)
+            new_song=song, n_recommendations=9)
+    if(new_recommendations==0):
+        message="Not Found"
+        return render_template('index.html',message=message)
+    else:
+        return render_template('index.html', new_recommendations=new_recommendations,song=song)
 
 
 app.run(debug=True)

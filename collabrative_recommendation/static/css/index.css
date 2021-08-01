@@ -32,12 +32,43 @@
     background-color: dodgerblue;
 }
 
+span{
+    color: burlywood;
+    
+}
 .caption-text {
     font-family: 'Hachi Maru Pop', cursive;
-    margin: 25px 0 15px 0;
+    margin: 65px 10px 25px 200px;
 }
 
+.cards{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    font-family: sans-serif;
+}
 
+.card{
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+.card:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+  }
+
+.card-image{
+    width: 100%;
+    display: block;
+
+}
+.card-content{
+    line-height: 1.5;
+    font-size: 30px;
+    padding: 15px;
+    background: #c5aeae;
+    color: black;
+}
 .search-input {
     padding: 8px 15px;
     font-size: 15px;
@@ -48,6 +79,16 @@
     border-radius: 50px;
     box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
 
+}
+.button-text{
+    padding: 8px 15px;
+    font-size: 15px;
+    width: 250px;
+    border-width: 0;
+    background: blue;
+    color: #e7e9f0;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
 }
 
 .search-input::placeholder {

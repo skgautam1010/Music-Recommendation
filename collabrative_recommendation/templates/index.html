@@ -19,10 +19,22 @@
 <div id="wrapper"><br>
 
  <input type="search" class="search-input" name="sng" placeholder="Enter The Song"/><br><br><br>
-  <input type="submit" class="button-text" value="GET Recommendation">
+  <input type="submit" class="button-text" value="GET RECOMMENDATION">
 </div>
 </form>
-<div class="caption-text"><h2 style="margin-left:30px;">Recommended Music <i>{{new_recommendations}}</i></h2></div>
- {% endblock %}   
+<div class="caption-text"><h2><b>Recommendations For The Song <span>{{song}}<span></span></b></h2></div>
+<br>
+  <div class="cards">
+    {% for recommendation in new_recommendations %}
+    <div class="card"> 
+      <img src="{{url_for('static',filename='music.jpg')}}" alt="avatar" class="card-image">
+      <div class="card-content">
+          <p><b><u>{{recommendation}}</u></b></p>
+      </div>
+    </div> 
+    {% endfor %}
+  </div>
+  
+  {% endblock %}   
 </body>
 </html>
