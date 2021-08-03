@@ -4,6 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+flask = "*"
+flask-sqlalchemy = "*"
+numpy = "*"
+pandas = "*"
+pillow = "*"
+scikit-learn = "*"
+scipy = "*"
+fuzzywuzzy = "*"
 gunicorn = "*"
 
 [dev-packages]
