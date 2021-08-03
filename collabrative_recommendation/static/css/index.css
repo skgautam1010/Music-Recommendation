@@ -13,9 +13,6 @@
     margin-top: 60px;
 }
 
-#output_image {
-    max-width: 500px;
-}
 
 .header-container {
     display: flex;
@@ -53,9 +50,7 @@
 .card{
     box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
-.card:hover {
-    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
-  }
+
 
 .card-image{
     width: 100%;
@@ -80,6 +75,13 @@
     box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
 
 }
+.search-input::placeholder {
+    color: darkslateblue;
+}
+
+.search-input:focus {
+    outline: none;
+}
 .button-text{
     padding: 8px 15px;
     font-size: 15px;
@@ -91,10 +93,3 @@
     box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
 }
 
-.search-input::placeholder {
-    color: darkslateblue;
-}
-
-.search-input:focus {
-    outline: none;
-}

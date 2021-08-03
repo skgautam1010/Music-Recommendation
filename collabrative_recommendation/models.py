@@ -154,9 +154,10 @@ app = Flask(__name__)
 
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask_learning'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/flask_learning'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
@@ -210,4 +211,4 @@ def display():
         return render_template('index.html', new_recommendations=new_recommendations,song=song)
 
 
-app.run(debug=True)
+app.run(debug=False,host='0.0.0.0')
