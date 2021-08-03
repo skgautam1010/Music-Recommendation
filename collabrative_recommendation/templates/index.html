@@ -12,17 +12,21 @@
 <img src="https://user-images.githubusercontent.com/26179770/106359099-693e3380-6336-11eb-8069-9e36f25de5ca.png"
                 class="head-image"
                 alt="HeaderImage"
-            />
-<h1 style="margin-top:20px;">Music Recommendation</h1>
+            /><br>
+<h1 style="margin-top:10px;">Music Recommendation</h1>
 </div>
 <form action="/" method="post">
-<div id="wrapper"><br>
+<div class="wrapper"><br>
 
  <input type="search" class="search-input" name="sng" placeholder="Enter The Song"/><br><br><br>
   <input type="submit" class="button-text" value="GET RECOMMENDATION">
 </div>
 </form>
-<div class="caption-text"><h2><b>Recommendations For The Song <span>{{song}}<span></span></b></h2></div>
+<div class="caption-text">
+{% if song %}  
+  <h2><b>Recommendations For The Song <span class="song-name">{{song}}<span></span></b></h2>
+{% endif %}
+</div>
 <br>
   <div class="cards">
     {% for recommendation in new_recommendations %}

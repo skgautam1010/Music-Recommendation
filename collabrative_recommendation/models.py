@@ -205,8 +205,7 @@ def display():
         new_recommendations = model.make_recommendation(
             new_song=song, n_recommendations=9)
     if(new_recommendations==0):
-        message="Not Found"
-        return render_template('index.html',message=message)
+        return render_template('index.html')
     else:
         return render_template('index.html', new_recommendations=new_recommendations,song=song)
 

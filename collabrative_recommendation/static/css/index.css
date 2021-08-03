@@ -6,11 +6,11 @@
 }
 
 
-#wrapper {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px;
-    width: 995px;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
 #output_image {
@@ -32,13 +32,13 @@
     background-color: dodgerblue;
 }
 
-span{
+.song-name{
     color: burlywood;
     
 }
 .caption-text {
     font-family: 'Hachi Maru Pop', cursive;
-    margin: 65px 10px 25px 200px;
+    margin: 25px 0 15px 10px;
 }
 
 .cards{
